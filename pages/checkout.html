@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/checkout.css" type="text/css" />
+  <title>checkout</title>
+</head>
+
+<body>
+  <main>
+    <!-- header-section -->
+    <header>
+      <div class="container header">
+        <div class="header-logo">
+          <img src="/assets/icons/ecom.svg" alt="" />
+          <div class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+          <div class="search-box">
+            <input type="text" name="text" placeholder="search" />
+            <div class="box">
+              <img src="/assets/icons/Group 9.svg" alt="" />
+              <div class="search">|</div>
+            </div>
+          </div>
+          <div class="header-link">
+            <a href="/pages/home.html">Home</a>
+            <a href="/pages/listing.html">Products</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+        <div class="selection">
+          <div class="ellipse">
+            <img src="/assets/icons/Ellipse.svg" alt="" />
+          </div>
+
+          <img src="/assets/icons/Frame.svg" alt="" />
+          <div class="header-login">
+            <img src="/assets/icons/icon.svg" alt="" />
+            <a href="/pages/login.html">Login</a>
+            <div class="slash">/</div>
+            <a href="/pages/register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- filter -->
+    <div class="filter container">
+      <div>Home</div>
+      <img src="/assets/icons/arrow-right .svg" alt="" />
+      <div>Cart</div>
+      <img src="/assets/icons/arrow-right .svg" alt="" />
+      <div>Check out</div>
+    </div>
+
+    <!-- Shipping Information -->
+    <div class="shipping-details container">
+      <div>
+        <div class="user-details">
+          <h4>Shipping Information</h4>
+          <div class="information">
+            <div class="name">
+              <label for="username">Your Name</label>
+              <input type="text" id="username" name="username" />
+            </div>
+            <div class="name">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="name">
+              <label for="address">Apartment, Suites, etc..</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="name">
+              <label for="number">Phone Number</label>
+              <input type="phonenumber" id="number" name="number" />
+            </div>
+            <div class="names">
+              <label for="text">Country</label>
+              <select id="state"></select>
+            </div>
+            <div class="names">
+              <label for="text">State</label>
+              <select id="state"></select>
+            </div>
+            <div class="names">
+              <label for="text">City</label>
+              <select id="state"></select>
+            </div>
+            <div class="name">
+              <label for="text">Zip / Postal Code</label>
+              <input type="text" id="text" name="text" />
+            </div>
+          </div>
+          <div class="line"></div>
+          <!-- delivery method -->
+          <h4 class="method">Delivery Method</h4>
+          <div class="delivery-method">
+            <div class="business">
+              <div class="standard">
+                <label for="checkbox">Standard</label>
+                <input type="checkbox" id="checkbox" name="checkbox" class="cb" />
+              </div>
+              <div class="days">07-10 Business Days</div>
+              <div class="dollar">$30.00</div>
+            </div>
+            <div class="business">
+              <div class="standard">
+                <label for="express">Express</label>
+                <input type="checkbox" id="express" name="express" class="cb" />
+              </div>
+              <div class="days">03-05 Business Days</div>
+              <div class="dollar">$40.00</div>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Billing Information -->
+        <div class="billing">
+          <h4>Billing Information</h4>
+          <div class="check">
+            <input type="checkbox" id="check" name="checkbox" />
+            <label for="check">Billing address is the same as shipping address</label>
+          </div>
+          <div class="information">
+            <div class="name">
+              <label for="username">Your Name</label>
+              <input type="name" id="username" name="username" />
+            </div>
+            <div class="name">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="name">
+              <label for="address">Apartment, Suites, etc..</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="name">
+              <label for="number">Phone Number</label>
+              <input type="phonenumber" id="number" name="number" />
+            </div>
+            <div class="names">
+              <label for="country">Country</label>
+              <select id="country"></select>
+            </div>
+            <div class="names">
+              <label for="state">State</label>
+              <select id="state"></select>
+            </div>
+            <div class="names">
+              <label for="text">City</label>
+              <select id="state"></select>
+            </div>
+            <div class="name">
+              <label for="text">Zip / Postal Code</label>
+              <input type="text" id="text" name="text" />
+            </div>
+          </div>
+          <div class="line"></div>
+
+          <!-- payment -->
+          <div class="payment">
+            <h4>Payment</h4>
+          </div>
+          <div class="cash-delivery">
+            <div class="delivery">
+              <input type="radio" id="cash" name="payment" />
+              <div class="cash">
+                <label for="cash">Cash On Delivery</label>
+                <div>Pay with cash on delivery</div>
+              </div>
+            </div>
+          </div>
+          <div class="cash-delivery">
+            <div class="delivery">
+              <input type="radio" id="checks" name="payment" />
+              <div class="cash">
+                <label for="checks">Online Payment</label>
+                <div>Pay Online</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- order-summary -->
+      <div class="summary">
+        <h4>Order Summary</h4>
+        <div class="table">
+          <!-- details -->
+
+          <div class="details">
+            <div class="sofa-img">
+              <img src="/assets/images/sofa 1.png" alt="comfort craft sofa" />
+            </div>
+            <div class="ratings">
+              <h3 class="rate">Comfort Craft Sofa</h3>
+              <div class="sofa-color">Grey</div>
+              <div class="btn">
+                <button type="button">01</button>
+                <div>$1,139.33</div>
+              </div>
+            </div>
+          </div>
+          <div class="dash"></div>
+
+          <div class="detail">
+            <div class="sofa-img">
+              <img src="/assets/images/headphone.png" alt="comfort craft sofa" />
+            </div>
+            <div class="ratings">
+              <h3 class="rate">Wireless Headphone</h3>
+              <div class="sofa-color">Blue</div>
+              <div class="btn">
+                <button type="button">01</button>
+                <div>$1,000.33</div>
+              </div>
+            </div>
+          </div>
+          <div class="dash"></div>
+          <div>
+            
+          </div>
+          <div class="bill">
+            <div class="sub-total">
+              <div>Sub Total</div>
+              <div>$2,139.60</div>
+            </div>
+            <div class="sub-total">
+              <div>Discount</div>
+              <div>$0.00</div>
+            </div>
+            <div class="sub-total">
+              <div>Shipping</div>
+              <div>$30.00</div>
+            </div>
+            <div class="sub-total">
+              <div>Taxes</div>
+              <div>$12.00</div>
+            </div>
+            <div class="dashs"></div>
+            <div class="sub-tot">
+              <div>Total</div>
+              <div>$2,550.33</div>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/confirm.html">
+          <div class="confirm-btn">
+            <button type="submit">Confirm Order</button>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h2>LOGO</h2>
+          <div class="links">
+            <a href="/pages/home.html">Home</a>
+            <a href="">Contact Us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="Reserved">
+          <div class="media">
+            <a href="#">
+              <img src="/assets/icons/facebook (1).svg" alt="" />
+            </a>  
+            <a href="#">
+              <img src="/assets/icons/instagram (1).svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/assets/icons/twitter (1).svg" alt="" />
+            </a>
+          </div>
+          <div class="right">@All Right Reserved</div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-section -->
+    <div class="mobile-icons">
+      <div class="profile">
+        <img src="/assets/icons/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="profile">
+        <img src="/assets/icons/search.svg" alt="">
+        <div>Search</div>
+      </div>
+      <div class="profile">
+        <img src="/assets/icons/products.svg" alt="">
+        <div>Products</div>
+      </div>
+      <div class="profile">
+        <img src="/assets/icons/icon.svg" alt="">
+        <div>Profile</div>
+      </div>
+    </div>
+  </main>
+  <!-- <script>
+  document.querySelector('.cash-delivery').addEventListener('click', function () {
+    document.getElementById('cash').checked = true;
+  });
+</script> -->
+</body>
+
+</html>
