@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="header-link">
-            <a href="/pages/home.html">Home</a>
+            <a href="/pages/index.html">Home</a>
             <a href="/pages/listing.html">Products</a>
             <a href="">About Us</a>
             <a href="">Contact Us</a>
@@ -71,10 +71,23 @@
         <div class="sofa-img">
           <img src="/assets/images/sofa 21.png" alt="">
         </div>
-        <div class="full-sofa">
+        <div id="images" class="full-sofa">
           <img src="/assets/images/sofas 1.png" alt="">
           <img src="/assets/images/sofas 2.png" alt="">
           <img src="/assets/images/sofas 3.png" alt="">
+          <img src="/assets/images/pillows.png" alt="">
+          <img src="/assets/images/sofa 5.png" alt="">
+          <img src="/assets/images/rippon.png" alt="">
+          <img src="/assets/images/speaker (2).png" alt="">
+          <img src="/assets/images/bowl.png" alt="">
+        </div>
+        <div class="sliders">
+          <div class="left-arrow btn">
+            <img src="../assets/icons/left.svg" alt="left" />
+          </div>
+          <div class="right-arrow btn">
+            <img src="../assets/icons/right.svg" alt="right" />
+          </div>
         </div>
       </div>
       <div class="sofa-text">
@@ -94,7 +107,7 @@
           <div class=grey></div>
         </div>
         <h5 class="capacity">Please Select a Capacity.</h5>
-        <div class="seater seaters">
+        <div class="seater">
           <button>3 Seater</button>
           <button>4 Seater</button>
           <button>5 Seater</button>
@@ -106,13 +119,13 @@
         <h5 class="quantity">Quantity</h5>
         <div class="cart">
           <div class="update">
-            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <button id="less"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
               </svg>
             </button>
-            <button>01</button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <button id="btn">01</button>
+            <button id="more"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
               </svg>
@@ -128,77 +141,86 @@
     </div>
 
     <!-- product-description -->
-    <div class="description container">
-      <h4>Product Description</h4>
-      <h4>Customer Reviews</h4>
-    </div>
-    <div class="dash container"></div>
-    
-    <!-- sofa-details text -->
-    <div class="container">
-      <p class="text-sofa">The Comfort Craft Sofa is the epitome of relaxation and style. Crafted with meticulous
-        attention to detail and designed with both
-        <span>aesthetics and comfort in mind, this sofa is the perfect addition to any living space. Here's what you can
-          expect from a Comfort</span> Craft Sofa:
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Exceptional Comfort:</b> Sink into plush cushions that provide an exceptional level of comfort and
-          support. The sofa is designed to cradle your body, ensuring a <span>cozy and inviting seating
-            experience.</span></li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Premium Materials:</b> The Comfort Craft Sofa is built to last, featuring a sturdy hardwood frame and
-          high-quality upholstery materials. This ensures durability and <span>longevity for years to come.</span></li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Stylish Design:</b> Its timeless and elegant design complements a variety of interior styles, from modern
-          to traditional. The sofa's clean lines and tasteful details <br />make it a centerpiece of any room.</li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Customization Options:</b> Many Comfort Craft Sofas offer customization options, allowing you to choose
-          the upholstery fabric, color, and even the configuration to suit your preferences and the aesthetics of your
-          home.
-        </li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Easy Maintenance:</b> The materials used in the sofa's construction are often selected for their ease of
-          maintenance, making it simple to keep your sofa looking great with regular cleaning and care.
-        </li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Generous Seating:</b> Depending on the model, Comfort Craft Sofas typically offer generous seating space,
-          making them perfect for entertaining guests or enjoying a cozy evening in.</li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li><b>Reclining and Additional Features:</b> Some Comfort Craft Sofas may come with built-in recliners,
-          cupholders, USB charging ports, or other convenient features that enhance your relaxation and entertainment
-          experience.
-        </li>
-      </ul>
-      </p>
-      <p class="premium">
-      <ul>
-        <li>In summary, the Comfort Craft Sofa is a blend of comfort, style, and quality craftsmanship. It's designed to
-          provide a luxurious and inviting seating experience while complementing the aesthetics of your home. When
-          considering a Comfort Craft Sofa, be sure to explore the specific features and options available for the
-          particular model you're interested in to find the perfect fit for your n</li>
-      </ul>
-      </p>
-    </div>
+<div class="description container">
+  <h4 id="products">Product Description</h4>
+  <h4 id="customers">Customer Reviews</h4>
+</div>
+   <div class="dash"></div>
+   <div class="small-line"></div>
+  <div class="container">
+    <p class="text-sofa">
+      The Comfort Craft Sofa is the epitome of relaxation and style. Crafted
+      with meticulous attention to detail and designed with both<span></span>
+      aesthetics and comfort in mind, this sofa is the perfect addition to
+      any living space. Here's what you can expect from a Comfort <span></span>Craft Sofa:
+    </p>
+    <div class="premium">
+    <ul>
+      <li><b>Exceptional Comfort: </b>Sink into plush cushions that provide an exceptional level of comfort and support. The sofa is designed to cradle your body, ensuring a <span class="text-desc"></span>cozy and inviting seating experience.</li>
+      <li><b>Premium Materials:</b> The Comfort Craft Sofa is built to last, featuring a sturdy hardwood frame and high-quality upholstery materials. This ensures durability and longevity for years to come.</li>
+      <li><b>Stylish Design:</b>Its timeless and elegant design complements a variety of interior styles, from modern to traditional. The sofa's clean lines and tasteful details <span class="text-desc"></span> make it a centerpiece of any room.</li>
+      <li><b>Customization Options:</b>Many Comfort Craft Sofas offer customization options, allowing you to choose the upholstery fabric, color, and even the configuration to <span class="text-desc"></span>suit your preferences and the aesthetics of your home.</li>
+      <li><b>Easy Maintenance:</b> The materials used in the sofa's construction are often selected for their ease of maintenance, making it simple to keep your sofa looking<span class="text-desc"></span> great with regular cleaning and care.</li>
+      <li><b>Generous Seating:</b>  Depending on the model, Comfort Craft Sofas typically offer generous seating space, making them perfect for entertaining guests or <span class="text-desc"></span>enjoying a cozy evening in.</li>
+      <li><b>Reclining & Additional Features:</b>  Some Comfort Craft Sofas may come with built-in recliners, cupholders, USB charging ports, or other convenient features<span class="text-desc"></span> that enhance your relaxation and entertainment experience.</li>
+      <li>In summary, the Comfort Craft Sofa is a blend of comfort, style, and quality craftsmanship. It's designed to provide a luxurious and inviting seating experience while complementing the aesthetics of your home. When considering a Comfort Craft Sofa, be sure to explore the specific features and options available for the particular model you're interested in to find the perfect fit for your needs.</li>
+    </ul>
+  </div>
+</div>
 
+<!-- Customer Reviews -->
+ <div id="review-content" class= "customer container">
+    <!-- review 1 -->
+    <div class="review">
+      <div class="circle"></div>
+      <div class="customer-review">
+         <h4>Deepika</h4>
+         <div>September 5, 2023</div>
+         <div class="rating">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bx-star.svg" alt="">
+         </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec libero ut purus bibendum lobortis. Maecenas vulputate est sit amet <span class="break"></span>libero facilisis, id gravida metus accumsan. Maecenas aliquam, ex id posuere rhoncus, est massa luctus neque, quis vestibulum tellus mauris <span class="break"></span> non libero. Proin eu semper urna, sit amet mollis lacus.</p>
+      </div>
+    </div>
+        <!-- review 2 -->
+      <div class="review1">
+      <div class="circle"></div>
+      <div class="customer-review">
+         <h4>Varnika</h4>
+         <div>September 5, 2023</div>
+         <div class="rating">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bx-star.svg" alt="">
+         </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec libero ut purus bibendum lobortis. Maecenas vulputate est sit amet <span class="break"></span>libero facilisis, id gravida metus accumsan. Maecenas aliquam, ex id posuere rhoncus, est massa luctus neque, quis vestibulum tellus mauris <span class="break"></span> non libero. Proin eu semper urna, sit amet mollis lacus.</p>
+      </div>
+    </div>
+        <!-- review 3 -->
+      <div class="review2">
+      <div class="circle"></div>
+      <div class="customer-review">
+         <h4>Sree</h4>
+         <div>September 5, 2023</div>
+         <div class="rating">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bxs-star.svg" alt="">
+          <img src="/assets/icons/icn bx-star.svg" alt="">
+         </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec libero ut purus bibendum lobortis. Maecenas vulputate est sit amet <span class="break"></span>libero facilisis, id gravida metus accumsan. Maecenas aliquam, ex id posuere rhoncus, est massa luctus neque, quis vestibulum tellus mauris <span class="break"></span> non libero. Proin eu semper urna, sit amet mollis lacus.</p>
+      </div>
+    </div>
+ </div>
+
+</div>
     <!-- related products -->
     <h2 class="topic">Related Products</h2>
     <div class="products-similar container">
@@ -450,6 +472,7 @@
       </div>
     </div>
   </main>
+  <script src="../js/details.js"></script>
 </body>
 
 </html>

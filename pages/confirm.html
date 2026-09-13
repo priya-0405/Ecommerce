@@ -1,195 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/confirm.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Confirm Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/confirm.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>Confirm Page</title>
-</head>
-
-<body>
-  <main>
-    <!-- header-section -->
-    <header>
-      <div class="container header">
-        <div class="header-logo">
-          <img src="/assets/icons/ecom.svg" alt="" />
-          <div class="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </div>
-          <div class="search-box">
-            <input type="text" name="text" placeholder="search" />
-            <div class="box">
-              <img src="/assets/icons/Group 9.svg" alt="" />
-              <div class="search">|</div>
+  <body>
+    <main>
+      <!-- header-section -->
+      <header>
+        <div class="container header">
+          <div class="header-logo">
+            <img src="/assets/icons/ecom.svg" alt="" />
+            <div class="menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <div class="search-box">
+              <input type="text" name="text" placeholder="search" />
+              <div class="box">
+                <img src="/assets/icons/Group 9.svg" alt="" />
+                <div class="search">|</div>
+              </div>
+            </div>
+            <div class="header-link">
+              <a href="/pages/index.html">Home</a>
+              <a href="/pages/listing.html">Products</a>
+              <a href="">About Us</a>
+              <a href="">Contact Us</a>
             </div>
           </div>
-          <div class="header-link">
-            <a href="/pages/home.html">Home</a>
-            <a href="/pages/listing.html">Products</a>
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
+          <div class="selection">
+            <div class="ellipse">
+              <img src="/assets/icons/Ellipse.svg" alt="" />
+            </div>
+            <img src="/assets/icons/Frame.svg" alt="" />
+            <div class="header-login">
+              <img src="/assets/icons/icon.svg" alt="" />
+              <a href="/pages/login.html">Login</a>
+              <div class="slash">/</div>
+              <a href="/pages/register.html">Register</a>
+            </div>
           </div>
         </div>
-        <div class="selection">
-          <div class="ellipse">
-            <img src="/assets/icons/Ellipse.svg" alt="" />
-          </div>
-          <img src="/assets/icons/Frame.svg" alt="" />
-          <div class="header-login">
-            <img src="/assets/icons/icon.svg" alt="" />
-            <a href="/pages/login.html">Login</a>
-            <div class="slash">/</div>
-            <a href="/pages/register.html">Register</a>
-          </div>
+      </header>
+      <div class="confirm-order">
+        <div class="circle">
+          <img src="/assets/icons/confirm.svg" alt="" />
+        </div>
+        <div class="Name">Hi Varun,</div>
+        <div class="confirm-text">Thanks For Your Order!</div>
+        <div class="order-btn">
+          <button type="submit">Order No: #251</button>
         </div>
       </div>
-    </header>
-    <div class="confirm-order">
-      <div class="circle">
-        <img src="/assets/icons/confirm.svg" alt="" />
-      </div>
-      <div class="Name">Hi Varun,</div>
-      <div class="confirm-text">Thanks For Your Order!</div>
-      <div class="order-btn">
-        <button type="submit">Order No: #251</button>
-      </div>
-    </div>
-    <!-- ordering-details -->
+      <!-- ordering-details -->
 
-    <div class="ordering-details container">
-      <div class="details">
-        <h4>Order Date</h4>
-        <div>07/09/2023</div>
+      <div class="ordering-details container">
+        <div class="details">
+          <h4>Order Date</h4>
+          <div>07/09/2023</div>
+        </div>
+        <div class="details">
+          <h4>Payment Status</h4>
+          <div>Paid</div>
+        </div>
+        <div class="details">
+          <h4>Shipping Status</h4>
+          <div>07/09/2023</div>
+        </div>
+        <div class="details">
+          <h4>Delivered On</h4>
+          <div>13/09/2023</div>
+        </div>
       </div>
-      <div class="details">
-        <h4>Payment Status</h4>
-        <div>Paid</div>
-      </div>
-      <div class="details">
-        <h4>Shipping Status</h4>
-        <div>07/09/2023</div>
-      </div>
-      <div class="details">
-        <h4>Delivered On</h4>
-        <div>13/09/2023</div>
-      </div>
-    </div>
-    <!-- order-summary -->
-    <h3 class="order-text">Order Summary</h3>
-    <div class="table-product container">
-      <table>
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Price</th>
-          </tr>
-        </thead>
+      <!-- order-summary -->
+      <h3 class="order-text">Order Summary</h3>
+      <div class="table-product container">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td>
-              <div class="product">
-                <img src="/assets/images/sofa 1.png" alt="comfort craft sofa" />
-                <div class="craft-sofa">
-                  <h3>Comfort Craft <span>Sofa</span></h3>
-                  <span class="sofa-color">Grey</span>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product">
+                  <img
+                    src="/assets/images/sofa 1.png"
+                    alt="comfort craft sofa"
+                  />
+                  <div class="craft-sofa">
+                    <h3>Comfort Craft <span>Sofa</span></h3>
+                    <span class="sofa-color">Grey</span>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="quantity">X1</td>
-            <td class="price">$1,139.33</td>
-          </tr>
+              </td>
+              <td class="quantity">X1</td>
+              <td class="price">$1,139.33</td>
+            </tr>
 
-          <tr>
-            <td>
-              <div class="product">
-                <img src="/assets/images/headphone.png" alt="wireless Headphone" />
-                <div class="craft-sofa">
-                  <h3>Wireless Headphone</h3>
-                  <span class="sofa-color">Blue</span>
+            <tr>
+              <td>
+                <div class="product">
+                  <img
+                    src="/assets/images/headphone.png"
+                    alt="wireless Headphone"
+                  />
+                  <div class="craft-sofa">
+                    <h3>Wireless Headphone</h3>
+                    <span class="sofa-color">Blue</span>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="quantity">X2</td>
-            <td class="price">$1,000.33</td>
-          </tr>
+              </td>
+              <td class="quantity">X2</td>
+              <td class="price">$1,000.33</td>
+            </tr>
 
-          <!-- border line -->
-          <tr>
-            <td colspan="3">
-              <div class="border-line"></div>
-            </td>
-          </tr>
+            <!-- border line -->
+            <tr>
+              <td colspan="3">
+                <div class="border-line"></div>
+              </td>
+            </tr>
 
-          <!-- total row -->
-          <tr class="total">
-            <td></td>
-            <td>Total</td>
-            <td class="price">$2,550.33</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <!-- footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="footer-section">
-          <h2>LOGO</h2>
-          <div class="links">
-            <a href="/pages/home.html">Home</a>
-            <a href="">Contact Us</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms & Conditions</a>
+            <!-- total row -->
+            <tr class="total">
+              <td></td>
+              <td>Total</td>
+              <td class="price">$2,550.33</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-section">
+            <h2>LOGO</h2>
+            <div class="links">
+              <a href="/pages/home.html">Home</a>
+              <a href="">Contact Us</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms & Conditions</a>
+            </div>
+          </div>
+          <div class="Reserved">
+            <div class="media">
+              <a href="#">
+                <img src="/assets/icons/facebook (1).svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="/assets/icons/instagram (1).svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="/assets/icons/twitter (1).svg" alt="" />
+              </a>
+            </div>
+            <div class="right">@All Right Reserved</div>
           </div>
         </div>
-        <div class="Reserved">
-          <div class="media">
-            <a href="#">
-              <img src="/assets/icons/facebook (1).svg" alt="" />
-            </a>  
-            <a href="#">
-              <img src="/assets/icons/instagram (1).svg" alt="" />
-            </a>
-            <a href="#">
-              <img src="/assets/icons/twitter (1).svg" alt="" />
-            </a>
-          </div>
-          <div class="right">@All Right Reserved</div>
+      </div>
+      <!-- mobile-section -->
+      <div class="mobile-icons">
+        <div class="profile">
+          <img src="/assets/icons/home.svg" alt="" />
+          <div>Home</div>
+        </div>
+        <div class="profile">
+          <img src="/assets/icons/search.svg" alt="" />
+          <div>Search</div>
+        </div>
+        <div class="profile">
+          <img src="/assets/icons/products.svg" alt="" />
+          <div>Products</div>
+        </div>
+        <div class="profile">
+          <img src="/assets/icons/icon.svg" alt="" />
+          <div>Profile</div>
         </div>
       </div>
-    </div>
-    <!-- mobile-section -->
-    <div class="mobile-icons">
-      <div class="profile">
-        <img src="/assets/icons/home.svg" alt="">
-        <div>Home</div>
-      </div>
-      <div class="profile">
-        <img src="/assets/icons/search.svg" alt="">
-        <div>Search</div>
-      </div>
-      <div class="profile">
-        <img src="/assets/icons/products.svg" alt="">
-        <div>Products</div>
-      </div>
-      <div class="profile">
-        <img src="/assets/icons/icon.svg" alt="">
-        <div>Profile</div>
-      </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>

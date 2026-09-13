@@ -131,10 +131,57 @@ header {
     gap: 10px;
     font-size: 17px;
     font-weight: 700;
+    position: relative;
 }
 .drop img{
     width: 24px;
     height: 24px;
+    cursor: pointer;
+}
+.dropdown{
+    border: 1px solid #D1D5D8;
+    border-radius:4px;
+    box-shadow: 0px 3px 8px 0px #00000024;
+    background: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    width:120px;
+    position: absolute;
+    right: 8px;
+    top: 35px;
+    display: none;
+    cursor: pointer;
+}
+.lines{
+    border-bottom: 1px solid #D1D5D8;
+     padding-left: 20px;
+    padding-right: 20px;
+}
+.dropdown div:nth-child(1){
+     padding:20px;
+}
+.dropdown div:nth-child(3){
+     padding:20px;
+}
+#name:hover{
+     cursor: pointer;
+}
+.dropdown.show {
+  display: block;
+}
+.dropdown div:nth-child(1):hover{
+     background-color:#102C57;
+     color: white;
+}
+.dropdown div:nth-child(3):hover{
+     background-color:#102C57;
+     color: white;
+}
+#arrow img {
+    transition: transform 0.3s ease;
+}
+#arrow.rotate img {
+    transform: rotate(180deg);
 }
 
 /* mobile section */
@@ -160,25 +207,7 @@ header {
 }
 
 /* banner section */
-#banner-img {
-    width: 100%;
-    transition: opacity 0.7s ease-in-out;
-}
 
-.fade {
-    animation: fadeEffect 0.7s ease-in-out;
-}
-
-@keyframes fadeEffect {
-    0% {
-        opacity: 0;
-        transform: scale(0.98);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 .home{
     width: 100%;
     height: 640px;
@@ -262,29 +291,42 @@ header {
     width: 25px;
     height: 35px;
 }
-.slider-line{
-    position: absolute;
-    bottom: 35px;
-    left: 46%;
-    border: 1px solid white;
-    border-radius: 4px;
-    width: 62px;
-    height: 3px;
-    background-color: white;
-    z-index: 20;
+.line{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:100;
 }
+
+.slider-line,
 .sliders-line{
-    position: absolute;
-    bottom: 35px;
-    right: 45%;
-    border: 1px solid white;
-    border-radius: 4px;
-    width: 62px;
-    height: 3px;
-    background-color: white;  
-    opacity:0.5; 
-    z-index: 20;
+    width:60px;
+    height:4px;
+    background:#999;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
 }
+.active{
+    background:#fff;
+}
+.banner {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner.active-banner {
+    display: block;
+}
+.banner-text h1 {
+    text-align: center;
+}
+
 
 @media(max-width:1023px){
     .home{
@@ -371,25 +413,6 @@ header {
     background: #00000059;
 }
 
-.pet img {
-  transition: transform 0.2s ease;
-}
-
-.click-animation {
-  animation: clickEffect 0.3s ease;
-}
-
-@keyframes clickEffect {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @media (max-width :1023px){
     .product-card{
         grid-template-columns: 1fr;
@@ -447,7 +470,7 @@ header {
 .Featured-cards img{
     width: 100%;
     height: 260px;
-    object-fit: cover;
+    object-fit:contain;
 }
 .text{
     font-size: 16px;
@@ -460,15 +483,9 @@ header {
     justify-content: center;
     margin-top: 10px;
 }
-.star svg{
+.star img{
     width:30px;
     height:25px;
-    color: #F3CD03;
-}
-.star span svg{
-    width:30px;
-    height:25px;
-    color: #D5D5D5;
 }
 .dollar{
     display: flex;
@@ -543,6 +560,46 @@ button{
     font-weight: 700;
     background: none;
 }
+.card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap:30px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+.card a{
+    display: none;
+    text-decoration: none;
+    color: black;
+}
+
+.more-cards{
+     border: 1px solid #D1D5D8;
+    box-shadow: 0px 1px 3px 0px #00000012;
+    border-radius: 4px;
+    text-align: center;
+    padding:15px;
+}
+.more-cards img{
+    width: 100%;
+    height: 260px;
+    object-fit:contain;
+}
+.more-cards a{
+    text-decoration: none;
+    color: black;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.star img{
+    width:30px;
+    height:25px;
+}
+
 @media(max-width:1023px){
     .load-button{
         margin-top: 50px;

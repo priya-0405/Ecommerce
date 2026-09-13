@@ -1,107 +1,81 @@
-// const bannerImg = document.getElementById("banner-img");
+// dropdown 
+const arrow = document.getElementById("arrow");
+const dropmenu = document.querySelector(".drop");
+const dropdown = document.querySelector(".dropdown");
+arrow.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("show");
+  arrow.classList.toggle("rotate");
+});
+dropmenu.addEventListener("click",(e)=>{
+    e.stopPropagation();
+    dropdown.classList.toggle("show");
+    arrow.classList.toggle("rotate");
+})
+document.addEventListener("click", (e) => {
+  if (!dropmenu.contains(e.target)) {
+    dropdown.classList.remove("show");
+     arrow.classList.remove("rotate");
+  }
+});
 
-// const leftBtn = document.querySelector(".left-arrow");
-// const rightBtn = document.querySelector(".right-arrow");
-
-// const images = [
-//   "../assets/images/banner-1.png",
-//   "../assets/images/marshall.png"
-// ];
-
-// let index = 0;
-
-// // RIGHT BUTTON
-// rightBtn.addEventListener("click", () => {
-//   index++;
-
-//   if (index >= images.length) {
-//     index = 0;
-//   }
-
-//   bannerImg.src = images[index];
-// });
-
-// // LEFT BUTTON
-// leftBtn.addEventListener("click", () => {
-//   index--;
-
-//   if (index < 0) {
-//     index = images.length - 1;
-//   }
-
-//   bannerImg.src = images[index];
-// });
-
-
-const bannerImg = document.getElementById("banner-img");
-
+// image slider
+const banners = document.querySelectorAll(".banner");
 const leftBtn = document.querySelector(".left-arrow");
 const rightBtn = document.querySelector(".right-arrow");
-
-const images = [
-  "../assets/images/banner-1.png",
-  "../assets/images/marshall.png"
-];
+const line1 = document.querySelector(".slider-line");
+const line2 = document.querySelector(".sliders-line");
 
 let index = 0;
-
-// Function to change image with animation
-function changeImage() {
-  bannerImg.classList.remove("fade");
-
-  // Restart animation
-  void bannerImg.offsetWidth;
-
-  bannerImg.src = images[index];
-  bannerImg.classList.add("fade");
+function showBanner() {
+    banners.forEach(function (banner) {
+        banner.classList.remove("active-banner");
+    });
+    banners[index].classList.add("active-banner");
+    if (index === 0) {
+        line1.classList.add("active");
+        line2.classList.remove("active");
+    } else {
+        line2.classList.add("active");
+        line1.classList.remove("active");
+    }
 }
-
-// RIGHT BUTTON
-rightBtn.addEventListener("click", () => {
-  index++;
-
-  if (index >= images.length) {
+rightBtn.onclick = function () {
+    index++;
+    if (index >= banners.length) {
+        index = 0;
+    }
+    showBanner();
+};
+leftBtn.onclick = function () {
+    index--;
+    if (index < 0) {
+        index = banners.length - 1;
+    }
+    showBanner();
+};
+line1.onclick = function () {
     index = 0;
-  }
+    showBanner();
+};
+line2.onclick = function () {
+    index = 1;
+    showBanner();
+};
 
-  changeImage();
-});
+showBanner();
 
-// LEFT BUTTON
-leftBtn.addEventListener("click", () => {
-  index--;
-
-  if (index < 0) {
-    index = images.length - 1;
-  }
-
-  changeImage();
-});
-
-setInterval(() => {
-  index++;
-
-  if (index >= images.length) {
-    index = 0;
-  }
-
-  changeImage();
-}, 3000);
-
-
-
-const productLinks = document.querySelectorAll(".pet a");
-
-productLinks.forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault(); // Stop immediate redirect
-
-    const img = this.querySelector("img");
-
-    img.classList.add("click-animation");
-
-    setTimeout(() => {
-      window.location.href = this.href;
-    }, 300); // Redirect after animation
-  });
-});
+// load more products
+const loadBtn = document.getElementById("load");
+const products = document.querySelectorAll(".card a");
+let current = 0;
+const showCount = 5;
+loadBtn.onclick = function () {
+    for (let i = current; i < current + showCount && i < products.length; i++) {
+        products[i].style.display = "block";
+    }
+    current += showCount;
+    if (current >= products.length) {
+        loadBtn.style.display = "none";
+    }
+};
